@@ -1,0 +1,14 @@
+from sys import stdin, stdout
+import re
+
+if __name__=='__main__':
+    s = str(raw_input())
+ 
+
+a=re.findall(r'(?<=[q,w,r,t,y,p,s,d,f,g,h,j,k,l,z,x,c,v,b,n,m,Q,W,R,T,Y,P,S,D,F,G,H,J,K,L,Z,X,C,V,B,N,M])([A,E,I,O,U,a,e,i,o,u]{2,100})
+(?:[q,w,r,t,y,p,s,d,f,g,h,j,k,l,z,x,c,v,b,n,m,Q,W,R,T,Y,P,S,D,F,G,H,J,K,L,Z,X,C,V,B,N,M])',s)
+
+for x in range (len(a)):
+    print a[x]
+if len(a) == 0:
+    print ("-1")
