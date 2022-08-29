@@ -1,3 +1,4 @@
+#https://www.hackerrank.com/challenges/finding-the-percentage/problem?isFullScreen=true
 if __name__ == '__main__':
     n = int(raw_input())
     student_marks = {}
